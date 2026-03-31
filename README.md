@@ -1,2 +1,2 @@
-# MECANICA-SABANDO
+# Taller Mecanico Vecchiarino
 MECANICA GENERAL
