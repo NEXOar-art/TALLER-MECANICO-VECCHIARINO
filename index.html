@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="SIP Mecánica Bariloche - Taller de Reparación de Automóviles en San Carlos de Bariloche. Servicio confiable y transparente.">
+<meta name="description" content="SIP Mecánica Bariloche - Taller de reparación de automóviles con años de experiencia. Servicio de calidad, confiable y transparente en San Carlos de Bariloche.">
 <meta name="theme-color" content="#0A0A0A">
-<title>SIP MECÁNICA | Taller Mecánico en Bariloche - Reparación y Mantenimiento</title>
+<title>SIP MECANICA | Taller Mecánico en Bariloche - Diagnóstico y Reparación Profesional</title>
 <!-- Preconnect para mejor rendimiento-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,23 +32,19 @@ display:['Space Grotesk','sans-serif'],
 },
 colors:{
 primary:{
-green:'#32CD32',
-lime:'#00FF00',
+orange:'#FF6B35',
+amber:'#F7931E',
 dark:'#0A0A0A',
 gray:'#1A1A1A',
 card:'#2D2D2D',
 metallic:'#C0C0C0',
 light:'#F1F5F9',
-},
-accent:{
-DEFAULT:'#4A5568',
-light:'#718096',
-dark:'#2D3748'
+cream:'#F5F1E8'
 }
 },
 boxShadow:{
-'neon':'0 0 25px rgba(50, 205, 50, 0.45)',
-'glow':'0 0 40px rgba(50, 205, 50, 0.25)',
+'neon':'0 0 25px rgba(255, 107, 53, 0.45)',
+'glow':'0 0 40px rgba(255, 107, 53, 0.25)',
 'card':'0 10px 40px-10px rgba(0, 0, 0, 0.5)',
 'soft':'0 4px 20px rgba(0, 0, 0, 0.15)',
 },
@@ -72,10 +68,10 @@ float:{
 </script>
 <style>
 :root{
---gradient-primary: linear-gradient(135deg,#32CD32 0%,#228B22 100%);
+--gradient-primary: linear-gradient(135deg,#FF6B35 0%,#F7931E 100%);
 --gradient-dark: linear-gradient(180deg,#0A0A0A 0%,#1A1A1A 100%);
 --gradient-metallic: linear-gradient(135deg,#E8E8E8 0%,#A8A8A8 50%,#E8E8E8 100%);
---gradient-green-glow: linear-gradient(135deg, rgba(50,205,50,0.3) 0%, rgba(0,255,0,0.1) 100%);
+--gradient-orange-glow: linear-gradient(135deg, rgba(255,107,53,0.3) 0%, rgba(247,147,30,0.1) 100%);
 }
 *{
 -webkit-tap-highlight-color: transparent;
@@ -123,7 +119,7 @@ transform: scale(1.05) translate(1%, -1%);
 background: rgba(26, 26, 26, 0.75);
 backdrop-filter: blur(20px);
 -webkit-backdrop-filter: blur(20px);
-border: 1px solid rgba(50, 205, 50, 0.15);
+border: 1px solid rgba(255, 107, 53, 0.15);
 box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 .glass-card{
@@ -134,13 +130,13 @@ border-radius: 20px;
 transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .glass-card:hover{
-border-color: rgba(50, 205, 50, 0.4);
+border-color: rgba(255, 107, 53, 0.4);
 transform: translateY(-6px);
-box-shadow: var(--shadow-card), 0 0 30px rgba(50, 205, 50, 0.15);
+box-shadow: var(--shadow-card), 0 0 30px rgba(255, 107, 53, 0.15);
 }
 /* Textos y efectos*/
 .glow-text{
-text-shadow: 0 0 20px rgba(50, 205, 50, 0.6), 0 0 40px rgba(34, 139, 34, 0.3);
+text-shadow: 0 0 20px rgba(255, 107, 53, 0.6), 0 0 40px rgba(247, 147, 30, 0.3);
 letter-spacing:-0.02em;
 }
 .gradient-text{
@@ -159,8 +155,8 @@ background-clip: text;
 animation: pulse-glow 3s ease-in-out infinite;
 }
 @keyframes pulse-glow{
-0%, 100%{opacity: 1; box-shadow: 0 0 20px rgba(50, 205, 50, 0.4);}
-50%{opacity: 0.85; box-shadow: 0 0 35px rgba(50, 205, 50, 0.7);}
+0%, 100%{opacity: 1; box-shadow: 0 0 20px rgba(255, 107, 53, 0.4);}
+50%{opacity: 0.85; box-shadow: 0 0 35px rgba(255, 107, 53, 0.7);}
 }
 /* Animaciones de entrada*/
 .fade-in-up{
@@ -189,14 +185,14 @@ content:'';
 position: absolute;
 top: 0; left:-100%;
 width: 100%; height: 100%;
-background: linear-gradient(90deg, transparent, rgba(50, 205, 50, 0.15), transparent);
+background: linear-gradient(90deg, transparent, rgba(255, 107, 53, 0.15), transparent);
 transition: left 0.6s ease;
 }
 .hover-glow:hover::before{
 left: 100%;
 }
 .hover-glow:hover{
-box-shadow: 0 0 35px rgba(50, 205, 50, 0.35);
+box-shadow: 0 0 35px rgba(255, 107, 53, 0.35);
 transform: translateY(-6px);
 }
 /* Parallax suave*/
@@ -222,8 +218,8 @@ transition: all 0.3s ease;
 color:#fff;
 }
 .input-modern:focus{
-border-color:#32CD32;
-box-shadow: 0 0 0 3px rgba(50, 205, 50, 0.25), 0 0 20px rgba(50, 205, 50, 0.15);
+border-color:#FF6B35;
+box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.25), 0 0 20px rgba(255, 107, 53, 0.15);
 outline: none;
 background: rgba(26, 26, 26, 0.95);
 }
@@ -231,8 +227,8 @@ background: rgba(26, 26, 26, 0.95);
 color: rgba(226, 232, 240, 0.5);
 }
 .input-valid{
-border-color:#22C55E!important;
-background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%2322c55e'%3e%3cpath fill-rule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clip-rule='evenodd'/%3e%3c/svg%3e");
+border-color:#FF6B35!important;
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23FF6B35'%3e%3cpath fill-rule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clip-rule='evenodd'/%3e%3c/svg%3e");
 background-repeat: no-repeat;
 background-position: right 1rem center;
 background-size: 1.3em;
@@ -266,7 +262,7 @@ transition: opacity 0.3s ease;
 }
 .btn-primary:hover{
 transform: translateY(-3px);
-box-shadow: 0 15px 40px rgba(50, 205, 50, 0.45), 0 0 30px rgba(50, 205, 50, 0.3);
+box-shadow: 0 15px 40px rgba(255, 107, 53, 0.45), 0 0 30px rgba(255, 107, 53, 0.3);
 }
 .btn-primary:hover::after{
 opacity: 1;
@@ -279,8 +275,8 @@ font-weight: 600;
 transition: all 0.3s ease;
 }
 .btn-outline:hover{
-border-color:#32CD32;
-background: rgba(50, 205, 50, 0.1);
+border-color:#FF6B35;
+background: rgba(255, 107, 53, 0.1);
 transform: translateY(-3px);
 }
 /* Botón de reseñas - estilo especial dorado*/
@@ -317,13 +313,13 @@ background: rgba(26, 26, 26, 0.6);
 border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb{
-background: linear-gradient(180deg,#32CD32,#228B22);
+background: linear-gradient(180deg,#FF6B35,#F7931E);
 border-radius: 4px;
 border: 2px solid transparent;
 background-clip: content-box;
 }
 ::-webkit-scrollbar-thumb:hover{
-background: linear-gradient(180deg,#00FF00,#32CD32);
+background: linear-gradient(180deg,#F7931E,#FF6B35);
 }
 /* Responsive typography */
 @media(max-width: 640px){
@@ -354,7 +350,7 @@ animation: pulse 2s infinite;
 /* Separador decorativo*/
 .divider{
 height: 1px;
-background: linear-gradient(90deg, transparent, rgba(50, 205, 50, 0.4), transparent);
+background: linear-gradient(90deg, transparent, rgba(255, 107, 53, 0.4), transparent);
 margin: 2rem 0;
 }
 /* Animación de carga sutil*/
@@ -379,7 +375,7 @@ z-index: 0;
 .particle{
 position: absolute;
 width: 3px; height: 3px;
-background: rgba(50, 205, 50, 0.6);
+background: rgba(255, 107, 53, 0.6);
 border-radius: 50%;
 animation: float-particle 15s infinite linear;
 opacity: 0.7;
@@ -397,7 +393,7 @@ margin-top: 0.5rem;
 margin-left: 0.25rem;
 font-size: 0.75rem;
 font-weight: 500;
-color: #32CD32;
+color: #FF6B35;
 }
 .label-below span.required{
 color: #EF4444;
@@ -409,28 +405,30 @@ height: 65px;
 width: 65px;
 object-fit: cover;
 border-radius: 50%;
-border: 3px solid #32CD32;
-box-shadow: 0 0 20px rgba(50, 205, 50, 0.5);
+border: 3px solid #FF6B35;
+box-shadow: 0 0 20px rgba(255, 107, 53, 0.5);
 transition: all 0.3s ease;
 }
 .navbar-logo:hover{
 transform: scale(1.1);
-box-shadow: 0 0 30px rgba(50, 205, 50, 0.8);
+box-shadow: 0 0 30px rgba(255, 107, 53, 0.8);
 }
-/* Hero Logo - Grande y Circular */
+/* Hero Logo - Grande y Circular CENTRADO */
 .hero-logo{
-height: 8rem;
-width: 8rem;
+height: 10rem;
+width: 10rem;
 object-fit: cover;
 border-radius: 50%;
-border: 4px solid #32CD32;
-box-shadow: 0 0 30px rgba(50, 205, 50, 0.6), 0 0 60px rgba(50, 205, 50, 0.3);
+border: 5px solid #FF6B35;
+box-shadow: 0 0 40px rgba(255, 107, 53, 0.6), 0 0 80px rgba(255, 107, 53, 0.3);
 transition: all 0.3s ease;
 animation: pulse-glow 3s ease-in-out infinite;
+display: block;
+margin: 0 auto;
 }
 .hero-logo:hover{
 transform: scale(1.05);
-box-shadow: 0 0 40px rgba(50, 205, 50, 0.8), 0 0 80px rgba(50, 205, 50, 0.4);
+box-shadow: 0 0 50px rgba(255, 107, 53, 0.8), 0 0 100px rgba(255, 107, 53, 0.4);
 }
 @media(max-width: 768px){
 .navbar-logo{
@@ -438,14 +436,14 @@ height: 50px;
 width: 50px;
 }
 .hero-logo{
-height: 5rem;
-width: 5rem;
+height: 7rem;
+width: 7rem;
 }
 }
 /* Language Switcher Styles */
 .lang-switcher{
-background: rgba(50, 205, 50, 0.15);
-border: 2px solid rgba(50, 205, 50, 0.4);
+background: rgba(255, 107, 53, 0.15);
+border: 2px solid rgba(255, 107, 53, 0.4);
 color: #fff;
 font-weight: 600;
 padding: 0.5rem 1rem;
@@ -455,8 +453,8 @@ transition: all 0.3s ease;
 font-size: 0.875rem;
 }
 .lang-switcher:hover{
-background: rgba(50, 205, 50, 0.25);
-border-color: #32CD32;
+background: rgba(255, 107, 53, 0.25);
+border-color: #FF6B35;
 transform: translateY(-2px);
 }
 /* Social Media Buttons */
@@ -502,31 +500,26 @@ border-color: transparent;
 <img src="MECANICASIP.png" alt="SIP Mecánica Logo" class="navbar-logo">
 </a>
 <!-- Título centrado -->
-<a href="#" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:static md:translate-x-0 md:translate-y-0 md:ml-auto md:mr-auto font-display font-bold text-lg sm:text-xl md:text-2xl gradient-text tracking-tight uppercase text-center md:text-left drop-shadow-lg" data-es="SIP MECÁNICA" data-en="SIP MECHANICS">
-SIP MECÁNICA
+<a href="#" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:static md:translate-x-0 md:translate-y-0 md:ml-auto md:mr-auto font-display font-bold text-lg sm:text-xl md:text-2xl gradient-text tracking-tight uppercase text-center md:text-left drop-shadow-lg">
+SIP MECANICA
 </a>
 <div class="ml-auto flex items-center gap-3 md:gap-5">
-<!-- Language Switcher -->
-<button id="langToggle" class="lang-switcher flex items-center gap-2">
-<i class="fa-solid fa-language"></i>
-<span id="langText">EN</span>
-</button>
-<div id="status-badge-desktop" class="hidden md:flex items-center px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs font-semibold uppercase tracking-wide bg-white/5 border border-white/10 hover:border-primary-green/40 transition-all">
+<div id="status-badge-desktop" class="hidden md:flex items-center px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs font-semibold uppercase tracking-wide bg-white/5 border border-white/10 hover:border-primary-orange/40 transition-all">
 <span id="status-dot-desktop" class="status-dot w-2 h-2 rounded-full mr-2.5 bg-gray-500"></span>
-<span id="status-text-desktop" class="text-gray-300" data-es="Verificando..." data-en="Checking...">Verificando...</span>
+<span id="status-text-desktop" class="text-gray-300">Verificando...</span>
 </div>
 <div class="hidden md:flex items-center gap-3 lg:gap-5">
-<a href="#asesoramiento" class="text-gray-300 hover:text-primary-green transition text-sm lg:text-base font-medium relative group" data-es="Asesoramiento" data-en="Consultation">
+<a href="#asesoramiento" class="text-gray-300 hover:text-primary-orange transition text-sm lg:text-base font-medium relative group">
 Asesoramiento
-<span class="absolute bottom-1 left-0 w-0 h-0.5 bg-primary-green transition-all group-hover:w-full"></span>
+<span class="absolute bottom-1 left-0 w-0 h-0.5 bg-primary-orange transition-all group-hover:w-full"></span>
 </a>
-<a href="#diagnostico" class="btn-primary px-4 lg:px-6 py-2 lg:py-2.5 rounded-xl font-bold transition shadow-neon uppercase text-xs lg:text-sm tracking-wide" data-es="Pedir Turno" data-en="Book Appointment">
-Pedir Turno
+<a href="#diagnostico" class="btn-primary px-4 lg:px-6 py-2 lg:py-2.5 rounded-xl font-bold transition shadow-neon uppercase text-xs lg:text-sm tracking-wide">
+Pre-Diagnóstico
 </a>
 </div>
 </div>
 </div>
-<div id="status-bar-mobile" class="md:hidden w-full py-2 text-center text-xs font-bold uppercase bg-gray-900/80 border-t border-white/10" data-es="Verificando estado..." data-en="Checking status...">Verificando estado...</div>
+<div id="status-bar-mobile" class="md:hidden w-full py-2 text-center text-xs font-bold uppercase bg-gray-900/80 border-t border-white/10">Verificando estado...</div>
 </nav>
 <!-- Botones flotantes premium (MODIFICADO: agregado botón WhatsApp) -->
 <div class="fixed bottom-24 md:bottom-8 right-4 z-50 animate-float flex flex-col gap-3">
@@ -539,103 +532,98 @@ title="Chat directo por WhatsApp" style="animation: float 6s ease-in-out infinit
 </a>
 <a href="#diagnostico" class="btn-primary px-5 py-3 md:px-7 md:py-3.5 rounded-2xl shadow-neon transition flex items-center gap-2.5 hover:shadow-glow text-sm font-semibold group">
 <i class="fa-solid fa-calendar-check text-lg"></i>
-<span class="hidden xs:inline" data-es="Pedir Turno" data-en="Book Appointment">Pedir Turno</span>
+<span class="hidden xs:inline">Pedir Turno</span>
 <i class="fa-solid fa-arrow-right ml-1 group-hover:translate-x-1 transition-transform"></i>
 </a>
 <!-- Botón flotante de reseñas-->
 <a href="https://maps.app.goo.gl/yCk8TtisiHZfzj5V6" target="_blank" rel="noopener noreferrer" class="btn-review px-4 py-2.5 md:px-5 md:py-3 rounded-xl shadow-lg transition flex items-center gap-2 text-xs md:text-sm font-semibold group animate-float" style="animation-delay: 0.5s;">
 <i class="fa-solid fa-star text-lg"></i>
-<span class="hidden xs:inline" data-es="Deja tu Reseña" data-en="Leave Review">Deja tu Reseña</span>
+<span class="hidden xs:inline">Deja tu Reseña</span>
 </a>
 </div>
 <!-- HERO SECTION-->
 <header class="relative pt-20 pb-20 md:pt-28 md:pb-28 lg:pt-36 lg:pb-32 min-h-screen flex items-center overflow-hidden">
 <!-- Fondo con gradiente y partículas-->
 <div class="absolute inset-0 bg-gradient-to-br from-primary-dark via-[#0D0D0D] to-[#0A0A0A]">
-<div class="absolute inset-0 opacity-30" style="background-image: radial-gradient(circle at 20% 35%, rgba(50, 205, 50, 0.15) 0%, transparent 40%), radial-gradient(circle at 80% 70%, rgba(34, 139, 34, 0.12) 0%, transparent 45%)"></div>
+<div class="absolute inset-0 opacity-30" style="background-image: radial-gradient(circle at 20% 35%, rgba(255,107,53, 0.15) 0%, transparent 40%), radial-gradient(circle at 80% 70%, rgba(247,147,30, 0.12) 0%, transparent 45%)"></div>
 </div>
 <div id="parallax-container" class="absolute inset-0 overflow-hidden">
 <img id="parallax-img" src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=1974&auto=format&fit=crop" alt="Taller mecánico profesional" class="parallax-image w-full h-full object-cover opacity-35 parallax-bg">
 <div class="absolute inset-0 bg-gradient-to-t from-primary-dark via-primary-dark/80 to-transparent"></div>
 </div>
-<div class="container mx-auto px-4 md:px-6 relative z-10 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-<div class="space-y-6 md:space-y-8 max-w-2xl">
+<div class="container mx-auto px-4 md:px-6 relative z-10">
+<div class="max-w-4xl mx-auto text-center space-y-6 md:space-y-8">
 <div class="fade-in-up" style="animation-delay: 0.1s;">
-<div class="inline-flex items-center gap-2 bg-primary-green/15 border border-primary-green/30 text-primary-green px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider backdrop-blur-sm">
-<i class="fa-solid fa-wrench"></i> <span data-es="Taller en Bariloche" data-en="Workshop in Bariloche">Taller en Bariloche</span>
+<div class="inline-flex items-center gap-2 bg-primary-orange/15 border border-primary-orange/30 text-primary-orange px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider backdrop-blur-sm">
+<i class="fa-solid fa-microchip"></i> <span>Diagnóstico de Precisión</span>
 </div>
 </div>
-<h1 class="font-display font-black text-4xl md:text-5xl lg:text-7xl leading-tight glow-text main-title fade-in-up flex items-center gap-6" style="animation-delay: 0.2s;">
-<span data-es="REPARACIÓN Y<br>MANTENIMIENTO AUTOMOTRIZ" data-en="AUTOMOTIVE<br>REPAIR AND MAINTENANCE">REPARACIÓN Y<br><span class="gradient-text">MANTENIMIENTO AUTOMOTRIZ</span></span>
-<img src="MECANICASIP.png" alt="SIP Mecánica Logo" class="hero-logo flex-shrink-0">
+<h1 class="font-display font-black text-4xl md:text-5xl lg:text-7xl leading-tight glow-text main-title fade-in-up" style="animation-delay: 0.2s;">
+SIP MECANICA<br><span class="gradient-text">BARILOCHE</span>
 </h1>
-<!-- ✅ DESCRIPCIÓN ACTUALIZADA PARA SIP MECÁNICA BARILOCHE -->
-<p class="text-gray-300/90 text-base md:text-lg max-w-xl description-text fade-in-up leading-relaxed" style="animation-delay: 0.3s;" 
-   data-es="En SIP Mecánica, entendemos que tu auto es una inversión importante y tu seguridad es primordial. Somos un taller de reparación de automóviles con años de experiencia en San Carlos de Bariloche, dedicados a brindarte un servicio de calidad, confiable y transparente. Nos especializamos en mantener tu vehículo en óptimas condiciones para que disfrutes de cada viaje con total tranquilidad." 
-   data-en="At SIP Mecánica, we understand that your car is an important investment and your safety is paramount. We are an automobile repair shop with years of experience in San Carlos de Bariloche, dedicated to providing you with quality, reliable and transparent service. We specialize in keeping your vehicle in optimal condition so you can enjoy every trip with complete peace of mind.">
+<!-- Logo centrado en el hero -->
+<div class="fade-in-up flex justify-center" style="animation-delay: 0.25s;">
+<img src="MECANICASIP.png" alt="SIP Mecánica Logo" class="hero-logo">
+</div>
+<!-- ✅ DESCRIPCIÓN ACTUALIZADA -->
+<p class="text-gray-300/90 text-base md:text-lg max-w-3xl mx-auto description-text fade-in-up leading-relaxed" style="animation-delay: 0.3s;">
 En SIP Mecánica, entendemos que tu auto es una inversión importante y tu seguridad es primordial. Somos un taller de reparación de automóviles con años de experiencia en San Carlos de Bariloche, dedicados a brindarte un servicio de calidad, confiable y transparente. Nos especializamos en mantener tu vehículo en óptimas condiciones para que disfrutes de cada viaje con total tranquilidad.
 </p>
 <!-- Stats animados-->
 <div class="grid grid-cols-3 gap-3 md:gap-5 pt-2 md:pt-4 fade-in-up" style="animation-delay: 0.5s;">
-<div class="text-center p-3 rounded-xl bg-white/5 border border-white/10 hover:border-primary-green/30 transition">
+<div class="text-center p-3 rounded-xl bg-white/5 border border-white/10 hover:border-primary-orange/30 transition">
 <span class="block text-2xl md:text-3xl font-bold gradient-text"><span id="counter1" data-target="99">0</span>%</span>
-<span class="text-xs text-gray-400 mt-1 block" data-es="Satisfacción" data-en="Satisfaction">Satisfacción</span>
+<span class="text-xs text-gray-400 mt-1 block">Precisión</span>
 </div>
-<div class="text-center p-3 rounded-xl bg-white/5 border border-white/10 hover:border-primary-green/30 transition">
-<span class="block text-2xl md:text-3xl font-bold gradient-text"><span id="counter2" data-target="15">0</span>+</span>
-<span class="text-xs text-gray-400 mt-1 block" data-es="Años Exp." data-en="Years Exp.">Años Exp.</span>
+<div class="text-center p-3 rounded-xl bg-white/5 border border-white/10 hover:border-primary-orange/30 transition">
+<span class="block text-2xl md:text-3xl font-bold gradient-text"><span id="counter2" data-target="50">0</span>min</span>
+<span class="text-xs text-gray-400 mt-1 block">Ahorro</span>
 </div>
-<div class="text-center p-3 rounded-xl bg-white/5 border border-white/10 hover:border-primary-green/30 transition">
-<span class="block text-2xl md:text-3xl font-bold gradient-text"><span id="counter3" data-target="5000">0</span>+</span>
-<span class="text-xs text-gray-400 mt-1 block" data-es="Clientes" data-en="Clients">Clientes</span>
+<div class="text-center p-3 rounded-xl bg-white/5 border border-white/10 hover:border-primary-orange/30 transition">
+<span class="block text-2xl md:text-3xl font-bold gradient-text"><span id="counter3" data-target="8000">0</span>+</span>
+<span class="text-xs text-gray-400 mt-1 block">Vehículos</span>
 </div>
 </div>
 <!-- CTAs-->
-<div class="flex flex-col sm:flex-row gap-3.5 pt-2 fade-in-up" style="animation-delay: 0.6s;">
+<div class="flex flex-col sm:flex-row gap-3.5 pt-2 justify-center fade-in-up" style="animation-delay: 0.6s;">
 <a href="#diagnostico" class="btn-primary px-6 py-3.5 rounded-xl uppercase tracking-wide flex items-center justify-center gap-2.5 group text-sm font-semibold shadow-neon">
-<span data-es="Solicitar Turno" data-en="Request Appointment">Solicitar Turno</span> <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+<span>Iniciar Diagnóstico</span> <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
 </a>
 <a href="#asesoramiento" class="btn-outline px-6 py-3.5 rounded-xl uppercase tracking-wide flex items-center justify-center gap-2 text-sm font-semibold">
-<i class="fa-solid fa-book-open text-primary-green"></i> <span data-es="Nuestros Servicios" data-en="Our Services">Nuestros Servicios</span>
+<i class="fa-solid fa-book-open text-primary-orange"></i> <span>Guías Técnicas</span>
 </a>
-</div>
-</div>
-<!-- Imagen destacada con efecto flotante-->
-<div class="hidden lg:block relative fade-in-up" style="animation-delay: 0.4s;">
-<div class="relative">
-<div class="absolute inset-4 bg-gradient-to-r from-primary-green/20 to-primary-green/20 rounded-3xl blur-2xl opacity-60 animate-pulse-slow"></div>
 </div>
 </div>
 </div>
 </header>
 <!-- SECCIÓN: CENTRO DE ASESORAMIENTO-->
 <section id="asesoramiento" class="py-16 md:py-24 bg-[#0D0D0D] relative">
-<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(34,139,34,0.08),_transparent_60%)]"></div>
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(255,107,53,0.08),_transparent_60%)]"></div>
 <div class="container mx-auto px-4 relative z-10">
 <div class="text-center mb-14 md:mb-20 max-w-3xl mx-auto">
-<div class="inline-block bg-primary-green/15 border border-primary-green/30 text-primary-green px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-5">
-<i class="fa-solid fa-lightbulb mr-1.5"></i> <span data-es="Servicios Profesionales" data-en="Professional Services">Servicios Profesionales</span>
+<div class="inline-block bg-primary-orange/15 border border-primary-orange/30 text-primary-orange px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-5">
+<i class="fa-solid fa-lightbulb mr-1.5"></i> <span>Conocimiento Técnico</span>
 </div>
-<h2 class="font-display font-bold text-4xl md:text-5xl gradient-text uppercase mb-5 glow-text tracking-tight" data-es="Soluciones Integrales en Bariloche" data-en="Comprehensive Solutions in Bariloche">Soluciones Integrales en Bariloche</h2>
-<p class="text-gray-400/90 max-w-2xl mx-auto text-base md:text-lg leading-relaxed" data-es="Detecta fallas en etapas tempranas y evita reparaciones costosas. En SIP Mecánica te brindamos asesoramiento profesional para mantener tu vehículo en perfectas condiciones." data-en="Detect failures at early stages and avoid expensive repairs. At SIP Mecánica we provide professional advice to keep your vehicle in perfect condition.">
-Detecta fallas en etapas tempranas y evita reparaciones costosas. En SIP Mecánica te brindamos asesoramiento profesional para mantener tu vehículo en perfectas condiciones.
+<h2 class="font-display font-bold text-4xl md:text-5xl gradient-text uppercase mb-5 glow-text tracking-tight">Centro de Asesoramiento</h2>
+<p class="text-gray-400/90 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
+Detecta fallas en etapas tempranas y evita reparaciones costosas. Aprende a identificar las señales clave de tu vehículo.
 </p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-7">
 <!-- Card 1-->
 <div class="glass-card hover-lift">
 <div class="relative h-44 md:h-48 overflow-hidden rounded-t-2xl">
-<img src="https://placehold.co/600x400/32CD32/0A0A0A?text=FRENOS" alt="Sistema de frenos" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+<img src="https://placehold.co/600x400/FF6B35/0A0A0A?text=FRENOS" alt="Sistema de frenos" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
 <div class="absolute inset-0 bg-gradient-to-t from-primary-dark/90 to-transparent"></div>
 <div class="absolute bottom-3 left-4">
-<span class="text-xs font-bold text-primary-green uppercase tracking-wider" data-es="Seguridad" data-en="Safety">Seguridad</span>
+<span class="text-xs font-bold text-primary-orange uppercase tracking-wider">Predictivo</span>
 </div>
 </div>
 <div class="p-5 md:p-6">
-<h3 class="font-bold text-lg md:text-xl text-white mb-2.5" data-es="Sistema de Frenos" data-en="Brake System">Sistema de Frenos</h3>
-<p class="text-gray-400/90 text-sm mb-4 leading-relaxed" data-es="Revisión completa de pastillas, discos, ABS y líquido de frenos. Tu seguridad es nuestra prioridad en cada reparación." data-en="Complete review of pads, discs, ABS and brake fluid. Your safety is our priority in every repair.">Revisión completa de pastillas, discos, ABS y líquido de frenos. Tu seguridad es nuestra prioridad en cada reparación.</p>
-<a href="#diagnostico" class="text-primary-green hover:text-green-300 font-semibold text-sm flex items-center gap-1.5 group">
-<span data-es="Consultar ahora" data-en="Consult now">Consultar ahora</span>
+<h3 class="font-bold text-lg md:text-xl text-white mb-2.5">Señales en Frenos</h3>
+<p class="text-gray-400/90 text-sm mb-4 leading-relaxed">Chillidos, vibración en pedal o recorrido excesivo: indicadores de desgaste en pastillas o aire en el circuito.</p>
+<a href="#diagnostico" class="text-primary-orange hover:text-orange-300 font-semibold text-sm flex items-center gap-1.5 group">
+<span>Analizar ahora</span>
 <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
 </a>
 </div>
@@ -643,17 +631,17 @@ Detecta fallas en etapas tempranas y evita reparaciones costosas. En SIP Mecáni
 <!-- Card 2-->
 <div class="glass-card hover-lift">
 <div class="relative h-44 md:h-48 overflow-hidden rounded-t-2xl">
-<img src="https://placehold.co/600x400/2D2D2D/32CD32?text=MOTOR" alt="Motor y transmisión" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+<img src="https://placehold.co/600x400/2D2D2D/FF6B35?text=BATERIA" alt="Sistema eléctrico" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
 <div class="absolute inset-0 bg-gradient-to-t from-primary-dark/90 to-transparent"></div>
 <div class="absolute bottom-3 left-4">
-<span class="text-xs font-bold text-primary-green uppercase tracking-wider" data-es="Mecánica" data-en="Mechanics">Mecánica</span>
+<span class="text-xs font-bold text-primary-orange uppercase tracking-wider">Preventivo</span>
 </div>
 </div>
 <div class="p-5 md:p-6">
-<h3 class="font-bold text-lg md:text-xl text-white mb-2.5" data-es="Motor y Transmisión" data-en="Engine and Transmission">Motor y Transmisión</h3>
-<p class="text-gray-400/90 text-sm mb-4 leading-relaxed" data-es="Diagnóstico y reparación de motor, caja de cambios y sistemas mecánicos con repuestos de calidad garantizada." data-en="Diagnosis and repair of engine, gearbox and mechanical systems with guaranteed quality spare parts.">Diagnóstico y reparación de motor, caja de cambios y sistemas mecánicos con repuestos de calidad garantizada.</p>
-<a href="#diagnostico" class="text-primary-green hover:text-green-300 font-semibold text-sm flex items-center gap-1.5 group">
-<span data-es="Verificar sistema" data-en="Check system">Verificar sistema</span>
+<h3 class="font-bold text-lg md:text-xl text-white mb-2.5">Batería y Alternador</h3>
+<p class="text-gray-400/90 text-sm mb-4 leading-relaxed">Arranque lento, luces tenues o parpadeantes: verifica voltaje y estado de carga antes de una falla total.</p>
+<a href="#diagnostico" class="text-primary-orange hover:text-orange-300 font-semibold text-sm flex items-center gap-1.5 group">
+<span>Verificar sistema</span>
 <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
 </a>
 </div>
@@ -661,122 +649,122 @@ Detecta fallas en etapas tempranas y evita reparaciones costosas. En SIP Mecáni
 <!-- Card 3-->
 <div class="glass-card hover-lift">
 <div class="relative h-44 md:h-48 overflow-hidden rounded-t-2xl">
-<img src="https://placehold.co/600x400/228B22/0A0A0A?text=ELÉCTRICO" alt="Sistema eléctrico" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+<img src="https://placehold.co/600x400/F7931E/0A0A0A?text=FLUIDOS" alt="Fluidos críticos" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
 <div class="absolute inset-0 bg-gradient-to-t from-primary-dark/90 to-transparent"></div>
 <div class="absolute bottom-3 left-4">
-<span class="text-xs font-bold text-primary-green uppercase tracking-wider" data-es="Diagnóstico" data-en="Diagnosis">Diagnóstico</span>
+<span class="text-xs font-bold text-primary-orange uppercase tracking-wider">Mantenimiento</span>
 </div>
 </div>
 <div class="p-5 md:p-6">
-<h3 class="font-bold text-lg md:text-xl text-white mb-2.5" data-es="Electricidad Automotriz" data-en="Automotive Electricity">Electricidad Automotriz</h3>
-<p class="text-gray-400/90 text-sm mb-4 leading-relaxed" data-es="Batería, alternador, arranque y sistemas eléctricos. Escaneo computarizado para detectar fallas precisas." data-en="Battery, alternator, starter and electrical systems. Computerized scanning to detect precise faults.">Batería, alternador, arranque y sistemas eléctricos. Escaneo computarizado para detectar fallas precisas.</p>
-<a href="#diagnostico" class="text-primary-green hover:text-green-300 font-semibold text-sm flex items-center gap-1.5 group">
-<span data-es="Diagnosticar" data-en="Diagnose">Diagnosticar</span>
+<h3 class="font-bold text-lg md:text-xl text-white mb-2.5">Fluidos Críticos</h3>
+<p class="text-gray-400/90 text-sm mb-4 leading-relaxed">Aceite, refrigerante y líquido de frenos: niveles bajos o cambios de color indican urgencia de revisión.</p>
+<a href="#diagnostico" class="text-primary-orange hover:text-orange-300 font-semibold text-sm flex items-center gap-1.5 group">
+<span>Revisar niveles</span>
 <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
 </a>
 </div>
 </div>
 </div>
 <div class="text-center mt-10 md:mt-14">
-<a href="#diagnostico" class="inline-flex items-center gap-2.5 bg-white/5 hover:bg-white/10 border border-white/15 hover:border-primary-green/40 text-white font-bold py-3.5 px-7 md:px-9 rounded-2xl transition-all uppercase tracking-wide text-sm shadow-soft hover:shadow-neon">
-<i class="fa-solid fa-hand-pointer text-primary-green"></i> <span data-es="Solicitar Turno Ahora" data-en="Request Appointment Now">Solicitar Turno Ahora</span>
+<a href="#diagnostico" class="inline-flex items-center gap-2.5 bg-white/5 hover:bg-white/10 border border-white/15 hover:border-primary-orange/40 text-white font-bold py-3.5 px-7 md:px-9 rounded-2xl transition-all uppercase tracking-wide text-sm shadow-soft hover:shadow-neon">
+<i class="fa-solid fa-hand-pointer text-primary-orange"></i> <span>Iniciar Pre-Diagnóstico Ahora</span>
 </a>
 </div>
 </div>
 </section>
 <!-- SECCIÓN: SERVICIOS INTEGRALES (AMPLIADA)-->
 <section class="py-16 md:py-24 bg-primary-dark relative">
-<div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 10% 20%, rgba(50, 205, 50, 0.08) 0%, transparent 25%), radial-gradient(circle at 90% 80%, rgba(34, 139, 34, 0.08) 0%, transparent 25%)"></div>
+<div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 10% 20%, rgba(255,107,53, 0.08) 0%, transparent 25%), radial-gradient(circle at 90% 80%, rgba(247,147,30, 0.08) 0%, transparent 25%)"></div>
 <div class="container mx-auto px-4 relative z-10">
 <div class="text-center mb-14 md:mb-20">
-<div class="inline-block bg-primary-green/15 border border-primary-green/30 text-primary-green px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-5">
-<i class="fa-solid fa-screwdriver-wrench mr-1.5"></i> <span data-es="Servicios Profesionales" data-en="Professional Services">Servicios Profesionales</span>
+<div class="inline-block bg-primary-orange/15 border border-primary-orange/30 text-primary-orange px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-5">
+<i class="fa-solid fa-screwdriver-wrench mr-1.5"></i> <span>Soluciones Profesionales</span>
 </div>
-<h2 class="font-display font-bold text-4xl md:text-5xl text-white uppercase mb-4 glow-text tracking-tight"><span data-es="Nuestros" data-en="Our">Nuestros</span><span class="gradient-text" data-es="Servicios" data-en="Services">Servicios</span></h2>
-<p class="text-gray-400/90 max-w-2xl mx-auto text-base md:text-lg leading-relaxed" data-es="Tecnología avanzada y expertise técnico en San Carlos de Bariloche para mantener tu vehículo en condiciones óptimas de seguridad y rendimiento." data-en="Advanced technology and technical expertise in San Carlos de Bariloche to keep your vehicle in optimal safety and performance conditions.">
-Tecnología avanzada y expertise técnico en San Carlos de Bariloche para mantener tu vehículo en condiciones óptimas de seguridad y rendimiento.
+<h2 class="font-display font-bold text-4xl md:text-5xl text-white uppercase mb-4 glow-text tracking-tight"><span>Servicios</span><span class="gradient-text">Integrales</span></h2>
+<p class="text-gray-400/90 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
+Tecnología avanzada y expertise técnico para mantener tu vehículo en condiciones óptimas de seguridad y rendimiento.
 </p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
 <!-- Servicio 1-->
 <div class="glass-card p-6 md:p-7 hover-lift group">
-<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-green/20 to-primary-green/20 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-<i class="fa-solid fa-laptop-code text-2xl md:text-3xl text-primary-green"></i>
+<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-orange/20 to-primary-orange/20 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-laptop-code text-2xl md:text-3xl text-primary-orange"></i>
 </div>
-<h3 class="font-bold text-xl text-white mb-2.5" data-es="Diagnóstico Computarizado" data-en="Computerized Diagnosis">Diagnóstico Computarizado</h3>
-<p class="text-gray-400/90 text-sm leading-relaxed" data-es="Escaneo avanzado de ECU, sensores y sistemas electrónicos con equipos de última generación." data-en="Advanced scanning of ECU, sensors and electronic systems with state-of-the-art equipment.">Escaneo avanzado de ECU, sensores y sistemas electrónicos con equipos de última generación.</p>
+<h3 class="font-bold text-xl text-white mb-2.5">Diagnóstico Computarizado</h3>
+<p class="text-gray-400/90 text-sm leading-relaxed">Escaneo avanzado de ECU, sensores y sistemas electrónicos con equipos de última generación.</p>
 </div>
 <!-- Servicio 2-->
 <div class="glass-card p-6 md:p-7 hover-lift group">
-<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-green/20 to-primary-green/20 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-<i class="fa-solid fa-oil-can text-2xl md:text-3xl text-primary-green"></i>
+<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-orange/20 to-primary-orange/20 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-oil-can text-2xl md:text-3xl text-primary-orange"></i>
 </div>
-<h3 class="font-bold text-xl text-white mb-2.5" data-es="Mecánica Ligera" data-en="Light Mechanics">Mecánica Ligera</h3>
-<p class="text-gray-400/90 text-sm leading-relaxed" data-es="Cambios de aceite, filtros, bujías y services programados con repuestos de calidad certificada." data-en="Oil changes, filters, spark plugs and scheduled services with certified quality spare parts.">Cambios de aceite, filtros, bujías y services programados con repuestos de calidad certificada.</p>
+<h3 class="font-bold text-xl text-white mb-2.5">Mecánica Ligera</h3>
+<p class="text-gray-400/90 text-sm leading-relaxed">Cambios de aceite, filtros, bujías y services programados con repuestos de calidad certificada.</p>
 </div>
 <!-- Servicio 3-->
 <div class="glass-card p-6 md:p-7 hover-lift group">
-<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-green/20 to-primary-green/20 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-<i class="fa-solid fa-circle-stop text-2xl md:text-3xl text-primary-green"></i>
+<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-orange/20 to-primary-orange/20 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-circle-stop text-2xl md:text-3xl text-primary-orange"></i>
 </div>
-<h3 class="font-bold text-xl text-white mb-2.5" data-es="Sistema de Frenos" data-en="Brake System">Sistema de Frenos</h3>
-<p class="text-gray-400/90 text-sm leading-relaxed" data-es="Revisión integral de ABS, pastillas, discos y líquido de frenos para máxima seguridad." data-en="Comprehensive review of ABS, pads, discs and brake fluid for maximum safety.">Revisión integral de ABS, pastillas, discos y líquido de frenos para máxima seguridad.</p>
+<h3 class="font-bold text-xl text-white mb-2.5">Sistema de Frenos</h3>
+<p class="text-gray-400/90 text-sm leading-relaxed">Revisión integral de ABS, pastillas, discos y líquido de frenos para máxima seguridad.</p>
 </div>
 <!-- Servicio 4-->
 <div class="glass-card p-6 md:p-7 hover-lift group">
-<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-green/20 to-primary-green/20 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-<i class="fa-solid fa-car-burst text-2xl md:text-3xl text-primary-green"></i>
+<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-orange/20 to-primary-orange/20 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-car-burst text-2xl md:text-3xl text-primary-orange"></i>
 </div>
-<h3 class="font-bold text-xl text-white mb-2.5" data-es="Suspensión y Dirección" data-en="Suspension and Steering">Suspensión y Dirección</h3>
-<p class="text-gray-400/90 text-sm leading-relaxed" data-es="Amortiguadores, rótulas, alineación y balanceo para confort y estabilidad en ruta." data-en="Shock absorbers, ball joints, alignment and balancing for comfort and stability on the road.">Amortiguadores, rótulas, alineación y balanceo para confort y estabilidad en ruta.</p>
+<h3 class="font-bold text-xl text-white mb-2.5">Suspensión y Dirección</h3>
+<p class="text-gray-400/90 text-sm leading-relaxed">Amortiguadores, rótulas, alineación y balanceo para confort y estabilidad en ruta.</p>
 </div>
 <!-- Servicio 5-->
 <div class="glass-card p-6 md:p-7 hover-lift group">
-<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-green/20 to-primary-green/20 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-<i class="fa-solid fa-snowflake text-2xl md:text-3xl text-primary-green"></i>
+<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-orange/20 to-primary-orange/20 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-snowflake text-2xl md:text-3xl text-primary-orange"></i>
 </div>
-<h3 class="font-bold text-xl text-white mb-2.5" data-es="Climatización" data-en="Air Conditioning">Climatización</h3>
-<p class="text-gray-400/90 text-sm leading-relaxed" data-es="Carga de gas, limpieza de conductos y reparación de compresores para confort térmico." data-en="Gas charging, duct cleaning and compressor repair for thermal comfort.">Carga de gas, limpieza de conductos y reparación de compresores para confort térmico.</p>
+<h3 class="font-bold text-xl text-white mb-2.5">Climatización</h3>
+<p class="text-gray-400/90 text-sm leading-relaxed">Carga de gas, limpieza de conductos y reparación de compresores para confort térmico.</p>
 </div>
 <!-- Servicio 6-->
 <div class="glass-card p-6 md:p-7 hover-lift group">
-<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-green/20 to-primary-green/20 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-<i class="fa-solid fa-bolt text-2xl md:text-3xl text-primary-green"></i>
+<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-orange/20 to-primary-orange/20 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-bolt text-2xl md:text-3xl text-primary-orange"></i>
 </div>
-<h3 class="font-bold text-xl text-white mb-2.5" data-es="Electricidad Automotriz" data-en="Automotive Electricity">Electricidad Automotriz</h3>
-<p class="text-gray-400/90 text-sm leading-relaxed" data-es="Diagnóstico de fallas eléctricas, baterías, alternadores y sistemas de iluminación." data-en="Diagnosis of electrical failures, batteries, alternators and lighting systems.">Diagnóstico de fallas eléctricas, baterías, alternadores y sistemas de iluminación.</p>
+<h3 class="font-bold text-xl text-white mb-2.5">Electricidad Automotriz</h3>
+<p class="text-gray-400/90 text-sm leading-relaxed">Diagnóstico de fallas eléctricas, baterías, alternadores y sistemas de iluminación.</p>
 </div>
 <!-- Servicio 7 - NUEVO-->
 <div class="glass-card p-6 md:p-7 hover-lift group">
-<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-green/20 to-primary-green/20 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-<i class="fa-solid fa-wrench text-2xl md:text-3xl text-primary-green"></i>
+<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-orange/20 to-primary-orange/20 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-wrench text-2xl md:text-3xl text-primary-orange"></i>
 </div>
-<h3 class="font-bold text-xl text-white mb-2.5" data-es="Mecánica Integral" data-en="Integral Mechanics">Mecánica Integral</h3>
-<p class="text-gray-400/90 text-sm leading-relaxed" data-es="Reparaciones completas de motor, transmisión y sistemas mecánicos con garantía de calidad." data-en="Complete engine, transmission and mechanical systems repairs with quality guarantee.">Reparaciones completas de motor, transmisión y sistemas mecánicos con garantía de calidad.</p>
+<h3 class="font-bold text-xl text-white mb-2.5">Mecánica Integral</h3>
+<p class="text-gray-400/90 text-sm leading-relaxed">Reparaciones completas de motor, transmisión y sistemas mecánicos con garantía de calidad.</p>
 </div>
 <!-- Servicio 8 - NUEVO-->
 <div class="glass-card p-6 md:p-7 hover-lift group">
-<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-green/20 to-primary-green/20 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-<i class="fa-solid fa-box-open text-2xl md:text-3xl text-primary-green"></i>
+<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-orange/20 to-primary-orange/20 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-box-open text-2xl md:text-3xl text-primary-orange"></i>
 </div>
-<h3 class="font-bold text-xl text-white mb-2.5" data-es="Repuestos" data-en="Spare Parts">Repuestos</h3>
-<p class="text-gray-400/90 text-sm leading-relaxed" data-es="Amplio stock de repuestos originales y alternativos de primera calidad para todas las marcas." data-en="Wide stock of original and alternative first-quality spare parts for all brands.">Amplio stock de repuestos originales y alternativos de primera calidad para todas las marcas.</p>
+<h3 class="font-bold text-xl text-white mb-2.5">Repuestos</h3>
+<p class="text-gray-400/90 text-sm leading-relaxed">Amplio stock de repuestos originales y alternativos de primera calidad para todas las marcas.</p>
 </div>
 <!-- Servicio 9 - NUEVO-->
 <div class="glass-card p-6 md:p-7 hover-lift group">
-<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-green/20 to-primary-green/20 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-<i class="fa-solid fa-magnifying-glass-chart text-2xl md:text-3xl text-primary-green"></i>
+<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-orange/20 to-primary-orange/20 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-magnifying-glass-chart text-2xl md:text-3xl text-primary-orange"></i>
 </div>
-<h3 class="font-bold text-xl text-white mb-2.5" data-es="Escaneo Profesional" data-en="Professional Scanning">Escaneo Profesional</h3>
-<p class="text-gray-400/90 text-sm leading-relaxed" data-es="Lectura y borrado de códigos de falla, análisis de datos en tiempo real y programación de módulos." data-en="Reading and clearing fault codes, real-time data analysis and module programming.">Lectura y borrado de códigos de falla, análisis de datos en tiempo real y programación de módulos.</p>
+<h3 class="font-bold text-xl text-white mb-2.5">Escaneo Profesional</h3>
+<p class="text-gray-400/90 text-sm leading-relaxed">Lectura y borrado de códigos de falla, análisis de datos en tiempo real y programación de módulos.</p>
 </div>
 <!-- Servicio 10 - NUEVO-->
 <div class="glass-card p-6 md:p-7 hover-lift group">
-<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-green/20 to-primary-green/20 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-<i class="fa-solid fa-compass-drafting text-2xl md:text-3xl text-primary-green"></i>
+<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-orange/20 to-primary-orange/20 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-compass-drafting text-2xl md:text-3xl text-primary-orange"></i>
 </div>
-<h3 class="font-bold text-xl text-white mb-2.5" data-es="Alineación y Balanceo" data-en="Alignment and Balancing">Alineación y Balanceo</h3>
-<p class="text-gray-400/90 text-sm leading-relaxed" data-es="Equipos láser de última generación para alineación 3D y balanceo computarizado de ruedas." data-en="State-of-the-art laser equipment for 3D alignment and computerized wheel balancing.">Equipos láser de última generación para alineación 3D y balanceo computarizado de ruedas.</p>
+<h3 class="font-bold text-xl text-white mb-2.5">Alineación y Balanceo</h3>
+<p class="text-gray-400/90 text-sm leading-relaxed">Equipos láser de última generación para alineación 3D y balanceo computarizado de ruedas.</p>
 </div>
 </div>
 </div>
@@ -785,122 +773,122 @@ Tecnología avanzada y expertise técnico en San Carlos de Bariloche para manten
 <section class="py-16 md:py-24 bg-[#0D0D0D] border-t border-white/5">
 <div class="container mx-auto px-4">
 <div class="text-center mb-10 md:mb-14">
-<div class="inline-block bg-primary-green/15 border border-primary-green/30 text-primary-green px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-5">
-<i class="fa-solid fa-comments mr-1.5"></i> <span data-es="Experiencias Reales" data-en="Real Experiences">Experiencias Reales</span>
+<div class="inline-block bg-primary-orange/15 border border-primary-orange/30 text-primary-orange px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-5">
+<i class="fa-solid fa-comments mr-1.5"></i> <span>Experiencias Reales</span>
 </div>
-<h2 class="font-display font-bold text-4xl md:text-5xl text-white uppercase glow-text tracking-tight" data-es="Lo que dicen nuestros clientes en Bariloche" data-en="What our customers in Bariloche say">Lo que dicen nuestros clientes en Bariloche</h2>
-<p class="text-gray-400/90 max-w-2xl mx-auto mt-4 text-base md:text-lg leading-relaxed" data-es="Confianza construida sobre resultados verificables y atención profesional en San Carlos de Bariloche." data-en="Trust built on verifiable results and professional service in San Carlos de Bariloche.">
-Confianza construida sobre resultados verificables y atención profesional en San Carlos de Bariloche.
+<h2 class="font-display font-bold text-4xl md:text-5xl text-white uppercase glow-text tracking-tight">La Voz de Nuestros Clientes</h2>
+<p class="text-gray-400/90 max-w-2xl mx-auto mt-4 text-base md:text-lg leading-relaxed">
+Confianza construida sobre resultados verificables y atención profesional en Bariloche.
 </p>
 </div>
 <div class="testimonial-carousel flex gap-5 md:gap-6 overflow-x-auto pb-6 snap-x snap-mandatory scrollbar-hide mx-2 px-2">
 <!-- Testimonio 1-->
-<div class="testimonial-card glass-card p-6 md:p-7 rounded-2xl border-t-4 border-primary-green hover-lift transition flex-shrink-0 w-[85%] md:w-1/3 snap-center">
+<div class="testimonial-card glass-card p-6 md:p-7 rounded-2xl border-t-4 border-primary-orange hover-lift transition flex-shrink-0 w-[85%] md:w-1/3 snap-center">
 <div class="flex justify-between items-start mb-4">
 <div class="flex text-yellow-400 text-lg">
 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
 </div>
 <i class="fa-solid fa-quote-right text-3xl text-gray-700/70"></i>
 </div>
-<p class="text-gray-300/95 italic mb-5 leading-relaxed text-sm" data-es="Excelente atención en SIP Mecánica. Me resolvieron un problema eléctrico que otros talleres en Bariloche no pudieron diagnosticar. Totalmente recomendados." data-en="Excellent service at SIP Mecánica. They solved an electrical problem that other workshops in Bariloche couldn't diagnose. Totally recommended.">"Excelente atención en SIP Mecánica. Me resolvieron un problema eléctrico que otros talleres en Bariloche no pudieron diagnosticar. Totalmente recomendados."</p>
+<p class="text-gray-300/95 italic mb-5 leading-relaxed text-sm">"Excelente servicio en SIP Mecánica Bariloche. Diagnóstico preciso y rápido. Me explicaron todo con claridad y profesionalismo. Totalmente recomendado."</p>
 <div class="flex items-center pt-3 border-t border-white/10">
-<div class="w-11 h-11 rounded-full bg-gradient-to-br from-primary-green to-green-700 flex items-center justify-center text-white font-bold mr-3.5 flex-shrink-0">MR</div>
+<div class="w-11 h-11 rounded-full bg-gradient-to-br from-primary-orange to-orange-700 flex items-center justify-center text-white font-bold mr-3.5 flex-shrink-0">MP</div>
 <div>
-<p class="font-bold text-white text-sm">Martín R.</p>
-<p class="text-xs text-gray-500">Bariloche - VW Gol</p>
+<p class="font-bold text-white text-sm">Martín P.</p>
+<p class="text-xs text-gray-500">Bariloche - Chevrolet Tracker 2023</p>
 </div>
 </div>
 </div>
 <!-- Testimonio 2-->
-<div class="testimonial-card glass-card p-6 md:p-7 rounded-2xl border-t-4 border-primary-green hover-lift transition flex-shrink-0 w-[85%] md:w-1/3 snap-center">
+<div class="testimonial-card glass-card p-6 md:p-7 rounded-2xl border-t-4 border-primary-orange hover-lift transition flex-shrink-0 w-[85%] md:w-1/3 snap-center">
 <div class="flex justify-between items-start mb-4">
 <div class="flex text-yellow-400 text-lg">
 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
 </div>
 <i class="fa-solid fa-quote-right text-3xl text-gray-700/70"></i>
 </div>
-<p class="text-gray-300/95 italic mb-5 leading-relaxed text-sm" data-es="Llevo mi auto a SIP Mecánica desde hace 3 años. Servicio confiable, precios justos y siempre me explican todo con claridad. Los mejores de Bariloche." data-en="I've been taking my car to SIP Mecánica for 3 years. Reliable service, fair prices and they always explain everything clearly. The best in Bariloche.">"Llevo mi auto a SIP Mecánica desde hace 3 años. Servicio confiable, precios justos y siempre me explican todo con claridad. Los mejores de Bariloche."</p>
+<p class="text-gray-300/95 italic mb-5 leading-relaxed text-sm">"El mejor taller de Bariloche. Proceso transparente y rápido. El pre-diagnóstico online me ahorró tiempo y dinero. Volveré sin dudas a SIP Mecánica."</p>
 <div class="flex items-center pt-3 border-t border-white/10">
-<div class="w-11 h-11 rounded-full bg-gradient-to-br from-primary-green to-green-700 flex items-center justify-center text-white font-bold mr-3.5 flex-shrink-0">LF</div>
+<div class="w-11 h-11 rounded-full bg-gradient-to-br from-primary-orange to-orange-700 flex items-center justify-center text-white font-bold mr-3.5 flex-shrink-0">AR</div>
 <div>
-<p class="font-bold text-white text-sm">Laura F.</p>
-<p class="text-xs text-gray-500">Bariloche - Ford Fiesta</p>
+<p class="font-bold text-white text-sm">Alejandra R.</p>
+<p class="text-xs text-gray-500">Bariloche - Renault Fluence</p>
 </div>
 </div>
 </div>
 <!-- Testimonio 3-->
-<div class="testimonial-card glass-card p-6 md:p-7 rounded-2xl border-t-4 border-primary-green hover-lift transition flex-shrink-0 w-[85%] md:w-1/3 snap-center">
+<div class="testimonial-card glass-card p-6 md:p-7 rounded-2xl border-t-4 border-primary-orange hover-lift transition flex-shrink-0 w-[85%] md:w-1/3 snap-center">
 <div class="flex justify-between items-start mb-4">
 <div class="flex text-yellow-400 text-lg">
 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
 </div>
 <i class="fa-solid fa-quote-right text-3xl text-gray-700/70"></i>
 </div>
-<p class="text-gray-300/95 italic mb-5 leading-relaxed text-sm" data-es="Muy profesionales. Hicieron el cambio de embrague de mi camioneta rápido y con garantía. Ubicados en Rivadavia, muy accesibles en Bariloche." data-en="Very professional. They changed my truck's clutch quickly and with a warranty. Located on Rivadavia, very accessible in Bariloche.">"Muy profesionales. Hicieron el cambio de embrague de mi camioneta rápido y con garantía. Ubicados en Rivadavia, muy accesibles en Bariloche."</p>
+<p class="text-gray-300/95 italic mb-5 leading-relaxed text-sm">"Llevo mi flota de utilitarios a SIP Mecánica en Bariloche. Reportes detallados, atención personalizada y precios justos. Un taller de confianza."</p>
 <div class="flex items-center pt-3 border-t border-white/10">
-<div class="w-11 h-11 rounded-full bg-gradient-to-br from-primary-green to-green-700 flex items-center justify-center text-white font-bold mr-3.5 flex-shrink-0">CG</div>
+<div class="w-11 h-11 rounded-full bg-gradient-to-br from-primary-orange to-orange-700 flex items-center justify-center text-white font-bold mr-3.5 flex-shrink-0">EC</div>
 <div>
-<p class="font-bold text-white text-sm">Carlos G.</p>
-<p class="text-xs text-gray-500">Bariloche - Toyota Hilux</p>
+<p class="font-bold text-white text-sm">Esteban C.</p>
+<p class="text-xs text-gray-500">Bariloche - Flota Utilitarios</p>
 </div>
 </div>
 </div>
 </div>
 <p class="text-center text-gray-500 mt-5 text-sm flex items-center justify-center gap-1.5">
-<i class="fa-solid fa-arrow-right text-primary-green"></i> <span data-es="Desliza para más opiniones" data-en="Swipe for more opinions">Desliza para más opiniones</span>
+<i class="fa-solid fa-arrow-right text-primary-orange"></i> <span>Desliza para más opiniones</span>
 </p>
 </div>
 </section>
 <!-- SECCIÓN: FORMULARIO DE DIAGNÓSTICO-->
 <section id="diagnostico" class="py-16 md:py-24 bg-gradient-to-b from-primary-dark to-[#080808] relative overflow-hidden">
-<div class="absolute inset-0 bg-[radial-gradient(circle_at_60%_40%,rgba(50,205,50,0.08),transparent_55%)]"></div>
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_60%_40%,rgba(255,107,53,0.08),transparent_55%)]"></div>
 <div class="container mx-auto px-4 relative z-10">
 <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
 <!-- Columna informativa-->
 <div class="lg:w-1/3 space-y-6">
 <h2 class="font-display font-bold text-4xl md:text-5xl text-white mb-2 glow-text tracking-tight">
-<span data-es="SOLICITÁ TU<br>TURNO EN BARILOCHE" data-en="REQUEST YOUR<br>APPOINTMENT IN BARILOCHE">SOLICITÁ TU<br><span class="gradient-text">TURNO EN BARILOCHE</span></span>
+ACELERADOR DE<br><span class="gradient-text">DIAGNÓSTICO</span>
 </h2>
-<p class="text-gray-400/90 mb-6 text-base leading-relaxed" data-es="Completá el formulario y nuestros técnicos te contactarán para coordinar tu visita a SIP Mecánica. Optimizamos tu tiempo y recursos." data-en="Complete the form and our technicians will contact you to coordinate your visit to SIP Mecánica. We optimize your time and resources.">
-Completá el formulario y nuestros técnicos te contactarán para coordinar tu visita a SIP Mecánica. Optimizamos tu tiempo y recursos.
+<p class="text-gray-400/90 mb-6 text-base leading-relaxed">
+Completa el formulario y nuestros técnicos prepararán el análisis previo antes de tu llegada. Optimizamos tu tiempo y recursos.
 </p>
 <div class="space-y-5 pt-2">
 <div class="flex items-start gap-4">
-<div class="bg-gradient-to-br from-primary-green/20 to-primary-green/20 p-3.5 rounded-xl text-primary-green flex-shrink-0">
+<div class="bg-gradient-to-br from-primary-orange/20 to-primary-orange/20 p-3.5 rounded-xl text-primary-orange flex-shrink-0">
 <i class="fa-solid fa-stopwatch text-xl"></i>
 </div>
 <div>
-<h4 class="font-bold text-white text-base mb-1" data-es="Atención Rápida" data-en="Fast Service">Atención Rápida</h4>
-<p class="text-gray-400/90 text-sm" data-es="Te respondemos en menos de 24 horas para coordinar tu turno." data-en="We respond in less than 24 hours to coordinate your appointment.">Te respondemos en menos de 24 horas para coordinar tu turno.</p>
+<h4 class="font-bold text-white text-base mb-1">Ahorro de Tiempo</h4>
+<p class="text-gray-400/90 text-sm">Evita esperas innecesarias. Tu caso ya estará en análisis al llegar.</p>
 </div>
 </div>
 <div class="flex items-start gap-4">
-<div class="bg-gradient-to-br from-primary-green/20 to-primary-green/20 p-3.5 rounded-xl text-primary-green flex-shrink-0">
+<div class="bg-gradient-to-br from-primary-orange/20 to-primary-orange/20 p-3.5 rounded-xl text-primary-orange flex-shrink-0">
 <i class="fa-solid fa-file-waveform text-xl"></i>
 </div>
 <div>
-<h4 class="font-bold text-white text-base mb-1" data-es="Diagnóstico Profesional" data-en="Professional Diagnosis">Diagnóstico Profesional</h4>
-<p class="text-gray-400/90 text-sm" data-es="Evaluamos tu vehículo con tecnología de punta en Bariloche." data-en="We evaluate your vehicle with cutting-edge technology in Bariloche.">Evaluamos tu vehículo con tecnología de punta en Bariloche.</p>
+<h4 class="font-bold text-white text-base mb-1">Análisis Previo</h4>
+<p class="text-gray-400/90 text-sm">Preparamos herramientas y repuestos específicos para tu caso.</p>
 </div>
 </div>
 <div class="flex items-start gap-4">
-<div class="bg-gradient-to-br from-primary-green/20 to-primary-green/20 p-3.5 rounded-xl text-primary-green flex-shrink-0">
+<div class="bg-gradient-to-br from-primary-orange/20 to-primary-orange/20 p-3.5 rounded-xl text-primary-orange flex-shrink-0">
 <i class="fa-solid fa-shield-halved text-xl"></i>
 </div>
 <div>
-<h4 class="font-bold text-white text-base mb-1" data-es="Garantía Asegurada" data-en="Guaranteed Warranty">Garantía Asegurada</h4>
-<p class="text-gray-400/90 text-sm" data-es="Todos nuestros trabajos cuentan con garantía de calidad." data-en="All our work comes with a quality guarantee.">Todos nuestros trabajos cuentan con garantía de calidad.</p>
+<h4 class="font-bold text-white text-base mb-1">Transparencia Total</h4>
+<p class="text-gray-400/90 text-sm">Recibirás un informe detallado con opciones de reparación y costos.</p>
 </div>
 </div>
 </div>
 <!-- Badge de confianza-->
 <div class="glass-card p-4 rounded-xl mt-4 flex items-center gap-3">
-<div class="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
-<i class="fa-solid fa-check text-green-400"></i>
+<div class="w-10 h-10 rounded-full bg-orange-500/20 flex items-center justify-center flex-shrink-0">
+<i class="fa-solid fa-check text-orange-400"></i>
 </div>
 <div>
-<p class="text-sm font-semibold text-white" data-es="Datos 100% seguros" data-en="100% secure data">Datos 100% seguros</p>
-<p class="text-xs text-gray-500" data-es="Tu información está protegida" data-en="Your information is protected">Tu información está protegida</p>
+<p class="text-sm font-semibold text-white">Datos 100% seguros</p>
+<p class="text-xs text-gray-500">Tu información está protegida</p>
 </div>
 </div>
 </div>
@@ -910,41 +898,41 @@ Completá el formulario y nuestros técnicos te contactarán para coordinar tu v
 <!-- Sección 1: Vehículo-->
 <div class="border-b border-white/10 pb-5">
 <h3 class="text-lg font-bold text-white mb-5 flex items-center gap-3">
-<span class="bg-gradient-to-r from-primary-green to-green-700 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">1</span>
-<span data-es="Datos del Vehículo" data-en="Vehicle Data">Datos del Vehículo</span>
+<span class="bg-gradient-to-r from-primary-orange to-orange-700 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">1</span>
+<span>Datos del Vehículo</span>
 </h3>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 <div>
 <select id="inputVehicleType" class="input-modern w-full bg-transparent p-4 rounded-xl outline-none text-sm appearance-none">
-<option value="" disabled selected data-es="Tipo de vehículo..." data-en="Vehicle type...">Tipo de vehículo...</option>
-<option value="Auto" data-es="Auto" data-en="Car">Auto</option>
-<option value="Camioneta" data-es="Camioneta" data-en="Pickup">Camioneta</option>
-<option value="SUV" data-es="SUV" data-en="SUV">SUV</option>
+<option value="" disabled selected>Tipo de vehículo...</option>
+<option value="Auto">Auto</option>
+<option value="Moto">Moto</option>
+<option value="Cuatriciclo">Cuatriciclo</option>
 </select>
-<label for="inputVehicleType" class="label-below"><span data-es="Tipo de Vehículo" data-en="Vehicle Type">Tipo de Vehículo</span></label>
+<label for="inputVehicleType" class="label-below"><span>Tipo de Vehículo</span></label>
 <i class="fa-solid fa-chevron-down absolute right-4 top-[6.4rem] md:top-[4.65rem] -translate-y-1/2 text-gray-500 text-xs pointer-events-none"></i>
 </div>
 <div>
 <input type="text" id="inputVehicle" placeholder="Marca y Modelo" class="input-modern w-full bg-transparent p-4 rounded-xl outline-none text-sm">
-<label for="inputVehicle" class="label-below"><span data-es="Marca y Modelo" data-en="Make and Model">Marca y Modelo</span></label>
+<label for="inputVehicle" class="label-below"><span>Marca y Modelo</span></label>
 </div>
 <div>
 <input type="number" id="inputKm" placeholder="Kilometraje" class="input-modern w-full bg-transparent p-4 rounded-xl outline-none text-sm">
-<label for="inputKm" class="label-below"><span data-es="Kilometraje" data-en="Mileage">Kilometraje</span></label>
+<label for="inputKm" class="label-below"><span>Kilometraje</span></label>
 </div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
 <div>
 <select id="inputFuelType" class="input-modern w-full bg-transparent p-4 rounded-xl outline-none text-sm appearance-none">
-<option value="" disabled selected data-es="Tipo de combustible..." data-en="Fuel type...">Tipo de combustible...</option>
+<option value="" disabled selected>Tipo de combustible...</option>
 <optgroup label="🔋 ARRANQUE Y ENERGÍA" class="text-gray-300">
-<option value="Naftero" data-es="Naftero(Gasolina)" data-en="Gasoline">Naftero(Gasolina)</option>
-<option value="Diesel" data-es="Diesel" data-en="Diesel">Diesel</option>
-<option value="Híbrido" data-es="Híbrido" data-en="Hybrid">Híbrido</option>
-<option value="Eléctrico" data-es="Eléctrico" data-en="Electric">Eléctrico</option>
+<option value="Naftero">Naftero(Gasolina)</option>
+<option value="Diesel">Diesel</option>
+<option value="Híbrido">Híbrido</option>
+<option value="Eléctrico">Eléctrico</option>
 </optgroup>
 </select>
-<label for="inputFuelType" class="label-below"><span data-es="Combustible" data-en="Fuel">Combustible</span></label>
+<label for="inputFuelType" class="label-below"><span>Combustible</span></label>
 <i class="fa-solid fa-chevron-down absolute right-4 top-[10.9rem] md:top-[4.65rem] -translate-y-1/2 text-gray-500 text-xs pointer-events-none"></i>
 </div>
 </div>
@@ -952,97 +940,97 @@ Completá el formulario y nuestros técnicos te contactarán para coordinar tu v
 <!-- Sección 2: Síntomas-->
 <div class="border-b border-white/10 pb-5">
 <h3 class="text-lg font-bold text-white mb-5 flex items-center gap-3">
-<span class="bg-gradient-to-r from-primary-green to-green-700 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">2</span>
-<span data-es="Descripción de Fallas" data-en="Failure Description">Descripción de Fallas</span>
+<span class="bg-gradient-to-r from-primary-orange to-orange-700 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">2</span>
+<span>Descripción de Fallas</span>
 </h3>
 <div class="mb-4">
-<textarea id="inputSymptoms" rows="3" placeholder="Describí ruidos, olores, vibraciones, luces de alerta..." class="input-modern w-full bg-transparent p-4 rounded-xl outline-none text-sm resize-none"></textarea>
-<label for="inputSymptoms" class="label-below"><span data-es="Síntomas" data-en="Symptoms">Síntomas</span></label>
+<textarea id="inputSymptoms" rows="3" placeholder="Describe ruidos, olores, vibraciones, luces de alerta..." class="input-modern w-full bg-transparent p-4 rounded-xl outline-none text-sm resize-none"></textarea>
+<label for="inputSymptoms" class="label-below"><span>Síntomas</span></label>
 </div>
 <div>
 <select id="inputContext" class="input-modern w-full bg-transparent p-4 rounded-xl outline-none text-sm appearance-none">
-<option value="" disabled selected data-es="Contexto de la falla..." data-en="Failure context...">Contexto de la falla...</option>
+<option value="" disabled selected>Contexto de la falla...</option>
 <optgroup label="🔋 ARRANQUE Y ENERGÍA" class="text-gray-300">
-<option value="no_arranca_gira" data-es="Gira pero no arranca" data-en="Cranks but won't start">Gira pero no arranca</option>
-<option value="no_arranca_nada" data-es="No da contacto" data-en="No contact">No da contacto</option>
-<option value="arranca_lento" data-es="Arranque lento o difícil" data-en="Slow or difficult start">Arranque lento o difícil</option>
+<option value="no_arranca_gira">Gira pero no arranca</option>
+<option value="no_arranca_nada">No da contacto</option>
+<option value="arranca_lento">Arranque lento o difícil</option>
 </optgroup>
 <optgroup label="⚙ RENDIMIENTO" class="text-gray-300 mt-2">
-<option value="falla_ralenti" data-es="Inestabilidad en ralentí" data-en="Idle instability">Inestabilidad en ralentí</option>
-<option value="pierde_potencia" data-es="Pérdida de potencia" data-en="Loss of power">Pérdida de potencia</option>
-<option value="consumo_excesivo" data-es="Consumo excesivo de combustible" data-en="Excessive fuel consumption">Consumo excesivo de combustible</option>
-<option value="humo_escape" data-es="Humo en escape(color)" data-en="Exhaust smoke (color)">Humo en escape(color)</option>
+<option value="falla_ralenti">Inestabilidad en ralentí</option>
+<option value="pierde_potencia">Pérdida de potencia</option>
+<option value="consumo_excesivo">Consumo excesivo de combustible</option>
+<option value="humo_escape">Humo en escape(color)</option>
 </optgroup>
 <optgroup label="🔊 RUIDOS Y VIBRACIONES" class="text-gray-300 mt-2">
-<option value="ruido_frenar" data-es="Ruido al frenar" data-en="Noise when braking">Ruido al frenar</option>
-<option value="ruido_direccion" data-es="Ruido al girar dirección" data-en="Noise when turning steering">Ruido al girar dirección</option>
-<option value="vibracion_alta" data-es="Vibración en alta velocidad" data-en="Vibration at high speed">Vibración en alta velocidad</option>
-<option value="ruido_motor" data-es="Ruido anormal en motor" data-en="Abnormal engine noise">Ruido anormal en motor</option>
+<option value="ruido_frenar">Ruido al frenar</option>
+<option value="ruido_direccion">Ruido al girar dirección</option>
+<option value="vibracion_alta">Vibración en alta velocidad</option>
+<option value="ruido_motor">Ruido anormal en motor</option>
 </optgroup>
 <optgroup label="🌡 TEMPERATURA Y FLUIDOS" class="text-gray-300 mt-2">
-<option value="levanta_temp" data-es="Se calienta el motor" data-en="Engine overheats">Se calienta el motor</option>
-<option value="perdida_fluido" data-es="Pérdida de fluido visible" data-en="Visible fluid loss">Pérdida de fluido visible</option>
+<option value="levanta_temp">Se calienta el motor</option>
+<option value="perdida_fluido">Pérdida de fluido visible</option>
 </optgroup>
-<option value="falla_frio" data-es="Solo falla en frío" data-en="Only fails when cold">Solo falla en frío</option>
-<option value="falla_caliente" data-es="Solo falla en caliente" data-en="Only fails when hot">Solo falla en caliente</option>
-<option value="falla_intermitente" data-es="Falla intermitente" data-en="Intermittent failure">Falla intermitente</option>
+<option value="falla_frio">Solo falla en frío</option>
+<option value="falla_caliente">Solo falla en caliente</option>
+<option value="falla_intermitente">Falla intermitente</option>
 </select>
-<label for="inputContext" class="label-below"><span data-es="Contexto" data-en="Context">Contexto</span></label>
+<label for="inputContext" class="label-below"><span>Contexto</span></label>
 <i class="fa-solid fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 text-xs pointer-events-none"></i>
 </div>
 </div>
 <!-- Sección 3: Servicio Integral (NUEVO)-->
 <div class="border-b border-white/10 pb-5">
 <h3 class="text-lg font-bold text-white mb-5 flex items-center gap-3">
-<span class="bg-gradient-to-r from-primary-green to-green-700 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">3</span>
-<span data-es="Servicio Requerido" data-en="Required Service">Servicio Requerido</span>
+<span class="bg-gradient-to-r from-primary-orange to-orange-700 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">3</span>
+<span>Servicio Integral</span>
 </h3>
 <div>
 <select id="inputService" class="input-modern w-full bg-transparent p-4 rounded-xl outline-none text-sm appearance-none">
-<option value="" disabled selected data-es="Seleccioná un servicio..." data-en="Select a service...">Seleccioná un servicio...</option>
-<option value="diagnostico" data-es="Diagnóstico Computarizado" data-en="Computerized Diagnosis">Diagnóstico Computarizado</option>
-<option value="mecanica_ligera" data-es="Mecánica Ligera" data-en="Light Mechanics">Mecánica Ligera</option>
-<option value="frenos" data-es="Sistema de Frenos" data-en="Brake System">Sistema de Frenos</option>
-<option value="suspension" data-es="Suspensión" data-en="Suspension">Suspensión</option>
-<option value="direccion" data-es="Dirección" data-en="Steering">Dirección</option>
-<option value="climatizacion" data-es="Climatización" data-en="Air Conditioning">Climatización</option>
-<option value="electricidad" data-es="Electricidad Automotriz" data-en="Automotive Electricity">Electricidad Automotriz</option>
-<option value="mecanica_integral" data-es="Mecánica Integral" data-en="Integral Mechanics">Mecánica Integral</option>
-<option value="repuesto" data-es="Repuesto" data-en="Spare Parts">Repuesto</option>
-<option value="escaneo" data-es="Escaneo" data-en="Scanning">Escaneo</option>
-<option value="alineacion" data-es="Alineación" data-en="Alignment">Alineación</option>
-<option value="balanceo" data-es="Balanceo" data-en="Balancing">Balanceo</option>
+<option value="" disabled selected>Selecciona un servicio...</option>
+<option value="diagnostico">Diagnóstico Computarizado</option>
+<option value="mecanica_ligera">Mecánica Ligera</option>
+<option value="frenos">Sistema de Frenos</option>
+<option value="suspension">Suspensión</option>
+<option value="direccion">Dirección</option>
+<option value="climatizacion">Climatización</option>
+<option value="electricidad">Electricidad Automotriz</option>
+<option value="mecanica_integral">Mecánica Integral</option>
+<option value="repuesto">Repuesto</option>
+<option value="escaneo">Escaneo</option>
+<option value="alineacion">Alineación</option>
+<option value="balanceo">Balanceo</option>
 </select>
-<label for="inputService" class="label-below"><span data-es="Servicio Requerido" data-en="Required Service">Servicio Requerido</span></label>
+<label for="inputService" class="label-below"><span>Servicio Requerido</span></label>
 <i class="fa-solid fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 text-xs pointer-events-none"></i>
 </div>
 </div>
 <!-- Sección 4: Contacto-->
 <div>
 <h3 class="text-lg font-bold text-white mb-5 flex items-center gap-3">
-<span class="bg-gradient-to-r from-primary-green to-green-700 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">4</span>
-<span data-es="Datos de Contacto" data-en="Contact Information">Datos de Contacto</span>
+<span class="bg-gradient-to-r from-primary-orange to-orange-700 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">4</span>
+<span>Datos de Contacto</span>
 </h3>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 <div>
 <input type="text" id="inputName" placeholder="Tu nombre completo" class="input-modern w-full bg-transparent p-4 rounded-xl outline-none text-sm">
-<label for="inputName" class="label-below"><span data-es="Nombre" data-en="Name">Nombre</span></label>
+<label for="inputName" class="label-below"><span>Nombre</span></label>
 </div>
 <div>
 <input type="tel" id="inputPhone" placeholder="WhatsApp para contacto" class="input-modern w-full bg-transparent p-4 rounded-xl outline-none text-sm">
-<label for="inputPhone" class="label-below"><span data-es="WhatsApp" data-en="WhatsApp">WhatsApp</span></label>
+<label for="inputPhone" class="label-below"><span>WhatsApp</span></label>
 </div>
 </div>
 <p class="text-xs text-gray-500 mt-3 flex items-center gap-1.5">
-<i class="fa-solid fa-lock text-primary-green"></i> <span data-es="Tus datos se usarán únicamente para coordinar tu turno" data-en="Your data will only be used to coordinate your appointment">Tus datos se usarán únicamente para coordinar tu turno</span>
+<i class="fa-solid fa-lock text-primary-orange"></i> <span>Tus datos se usarán únicamente para coordinar tu turno</span>
 </p>
 </div>
 <!-- Botón de envío-->
 <button type="submit" class="btn-primary w-full font-bold uppercase text-base py-4.5 rounded-2xl hover:shadow-neon transition flex items-center justify-center gap-3 mt-2">
-<i class="fa-brands fa-whatsapp text-2xl"></i> <span data-es="Enviar Solicitud a SIP MECÁNICA" data-en="Send Request to SIP MECÁNICA">Enviar Solicitud a SIP MECÁNICA</span>
+<i class="fa-brands fa-whatsapp text-2xl"></i> <span>Enviar Solicitud a SIP MECANICA</span>
 </button>
 <p class="text-center text-xs text-gray-500 pt-2">
-<span data-es="Al enviar, aceptás nuestros" data-en="By sending, you accept our">Al enviar, aceptás nuestros</span> <a href="#" class="text-primary-green hover:underline" data-es="términos de servicio" data-en="terms of service">términos de servicio</a>
+<span>Al enviar, aceptas nuestros</span> <a href="#" class="text-primary-orange hover:underline">términos de servicio</a>
 </p>
 </form>
 </div>
@@ -1062,65 +1050,61 @@ Completá el formulario y nuestros técnicos te contactarán para coordinar tu v
 <i class="fa-solid fa-truck-pickup text-4xl md:text-5xl hover:text-white transition-colors"></i>
 </div>
 <!-- Card de ubicación (MODIFICADO) -->
-<div class="glass-card rounded-3xl p-6 md:p-10 max-w-5xl mx-auto">
-<div class="grid md:grid-cols-2 gap-8 items-center">
-<div class="text-left">
-<h3 class="font-display font-bold text-2xl md:text-3xl text-white mb-4" data-es="¿Dónde estamos?" data-en="Where are we?">¿Dónde estamos?</h3>
-<p class="text-gray-400/90 mb-6 text-base" data-es="Visitanos en San Carlos de Bariloche para validación final y reparaciones especialadas." data-en="Visit us in San Carlos de Bariloche for final validation and specialized repairs.">Visitanos en San Carlos de Bariloche para validación final y reparaciones especialadas.</p>
+<div class="glass-card rounded-3xl p-6 md:p-10 max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8">
+<div class="text-left max-w-md">
+<h3 class="font-display font-bold text-2xl md:text-3xl text-white mb-2">¿Dónde estamos?</h3>
+<p class="text-gray-400/90 mb-4 text-base">Visítanos para validación final y reparaciones especializadas.</p>
 <!-- ✅ DIRECCIÓN ACTUALIZADA -->
-<div class="space-y-3 mb-6">
-<div class="flex items-start gap-3 text-gray-300/90 text-sm">
-<i class="fa-regular fa-location-dot text-primary-green text-xl mt-0.5 flex-shrink-0"></i>
+<div class="flex items-start gap-3 text-gray-300/90 text-sm mb-2">
+<i class="fa-regular fa-location-dot text-primary-orange text-xl mt-0.5 flex-shrink-0"></i>
 <div>
-<p class="font-medium mb-1">Dirección:</p>
-<p class="text-gray-400">Rivadavia 1054, R8400 San Carlos de Bariloche, Río Negro</p>
+<p class="font-medium">Dirección:</p>
+<p>Rivadavia 1054, R8400 San Carlos de Bariloche, Río Negro</p>
 </div>
 </div>
 <!-- WhatsApp -->
-<div class="flex items-start gap-3 text-gray-300/90 text-sm">
-<i class="fa-brands fa-whatsapp text-primary-green text-xl mt-0.5 flex-shrink-0"></i>
+<div class="flex items-start gap-3 text-gray-300/90 text-sm mb-2">
+<i class="fa-brands fa-whatsapp text-primary-orange text-xl mt-0.5 flex-shrink-0"></i>
 <div>
-<p class="font-medium mb-1">WhatsApp:</p>
-<p dir="ltr" class="text-gray-400">+54 9 294 154-631057</p>
+<p class="font-medium">WhatsApp:</p>
+<p dir="ltr">+54-294154631057</p>
 </div>
 </div>
 <!-- Email -->
-<div class="flex items-start gap-3 text-gray-300/90 text-sm">
-<i class="fa-regular fa-envelope text-primary-green text-xl mt-0.5 flex-shrink-0"></i>
+<div class="flex items-start gap-3 text-gray-300/90 text-sm mb-2">
+<i class="fa-solid fa-envelope text-primary-orange text-xl mt-0.5 flex-shrink-0"></i>
 <div>
-<p class="font-medium mb-1">Email:</p>
-<p class="text-gray-400">sipmecanica@gmail.com</p>
+<p class="font-medium">E-mail:</p>
+<p>sipmecanica@gmail.com</p>
 </div>
 </div>
 <!-- ✅ HORARIOS ACTUALIZADOS -->
 <div class="flex items-start gap-3 text-gray-300/90 text-sm">
-<i class="fa-regular fa-clock text-primary-green text-xl mt-0.5 flex-shrink-0"></i>
+<i class="fa-regular fa-clock text-primary-orange text-xl mt-0.5 flex-shrink-0"></i>
 <div>
-<p class="font-medium mb-1" data-es="Horarios de atención:" data-en="Business hours:">Horarios de atención:</p>
-<p class="text-gray-400" data-es="Lunes a Sábado: 08:00 - 17:00" data-en="Monday to Saturday: 08:00 - 17:00">Lunes a Sábado: 08:00 - 17:00</p>
-<p class="text-gray-400" data-es="Domingo: Cerrado" data-en="Sunday: Closed">Domingo: Cerrado</p>
+<p class="font-medium">Horarios de atención:</p>
+<p>Lunes a Sábado: 08:00 - 17:00</p>
+<p>Domingo: Cerrado</p>
 </div>
 </div>
 </div>
-</div>
-<div class="flex flex-col gap-3">
-<a href="https://maps.app.goo.gl/3CfDrx3Ru732cuh16" target="_blank" rel="noopener noreferrer" class="btn-primary px-6 py-3.5 md:px-8 md:py-4 rounded-2xl font-bold hover:shadow-neon transition flex items-center justify-center gap-3 text-sm md:text-base whitespace-nowrap shadow-soft">
-<i class="fa-solid fa-map-location-dot text-lg"></i> <span data-es="Ver en Google Maps" data-en="View on Google Maps">Ver en Google Maps</span>
+<div class="flex flex-col sm:flex-row gap-3">
+<a href="https://maps.app.goo.gl/3CfDrx3Ru732cuh16" target="_blank" rel="noopener noreferrer" class="btn-primary px-6 py-3.5 md:px-8 md:py-4 rounded-2xl font-bold hover:shadow-neon transition flex items-center gap-3 text-sm md:text-base whitespace-nowrap shadow-soft">
+<i class="fa-solid fa-map-location-dot text-lg"></i> <span>Ver en Google Maps</span>
 </a>
 <!-- BOTÓN DE RESEÑAS-->
-<a href="https://maps.app.goo.gl/yCk8TtisiHZfzj5V6" target="_blank" rel="noopener noreferrer" class="btn-review px-6 py-3.5 md:px-8 md:py-4 rounded-2xl font-bold hover:shadow-neon transition flex items-center justify-center gap-3 text-sm md:text-base whitespace-nowrap shadow-soft">
-<i class="fa-solid fa-star text-lg"></i> <span data-es="Deja tu Reseña" data-en="Leave Review">Deja tu Reseña</span>
+<a href="https://maps.app.goo.gl/yCk8TtisiHZfzj5V6" target="_blank" rel="noopener noreferrer" class="btn-review px-6 py-3.5 md:px-8 md:py-4 rounded-2xl font-bold hover:shadow-neon transition flex items-center gap-3 text-sm md:text-base whitespace-nowrap shadow-soft">
+<i class="fa-solid fa-star text-lg"></i> <span>Deja tu Reseña</span>
 </a>
-</div>
 </div>
 </div>
 <!-- Redes Sociales -->
 <div class="mt-8 flex items-center justify-center gap-4">
-<a href="https://www.facebook.com/p/Taller-Mecanico-en-Bariloche-SIP-Mecanica-100054512738037/?locale=es_LA" target="_blank" rel="noopener noreferrer" class="social-btn facebook" title="Facebook">
-<i class="fa-brands fa-facebook-f"></i>
-</a>
 <a href="https://www.instagram.com/tallermecanicovecchiarino/" target="_blank" rel="noopener noreferrer" class="social-btn instagram" title="Instagram">
 <i class="fa-brands fa-instagram"></i>
+</a>
+<a href="https://www.facebook.com/p/Taller-Mecanico-en-Bariloche-SIP-Mecanica-100054512738037/?locale=es_LA" target="_blank" rel="noopener noreferrer" class="social-btn facebook" title="Facebook">
+<i class="fa-brands fa-facebook-f"></i>
 </a>
 <a href="https://api.whatsapp.com/send?phone=54294154631057" target="_blank" rel="noopener noreferrer" class="social-btn whatsapp" title="WhatsApp">
 <i class="fa-brands fa-whatsapp"></i>
@@ -1128,8 +1112,8 @@ Completá el formulario y nuestros técnicos te contactarán para coordinar tu v
 </div>
 <!-- Badge de garantía-->
 <div class="mt-10 inline-flex items-center gap-3 bg-white/5 border border-white/10 px-5 py-3 rounded-full">
-<i class="fa-solid fa-certificate text-primary-green text-lg"></i>
-<span class="text-sm font-medium text-gray-300" data-es="Garantía en todos nuestros servicios" data-en="Warranty on all our services">Garantía en todos nuestros servicios</span>
+<i class="fa-solid fa-certificate text-primary-orange text-lg"></i>
+<span class="text-sm font-medium text-gray-300">Garantía en todos nuestros servicios</span>
 </div>
 </div>
 </section>
@@ -1138,67 +1122,41 @@ Completá el formulario y nuestros técnicos te contactarán para coordinar tu v
 <div class="container mx-auto px-4">
 <div class="flex flex-col md:flex-row items-center justify-between gap-6">
 <div class="text-center md:text-left">
-<p class="mb-2 text-white font-display font-bold text-xl md:text-2xl glow-text tracking-tight">SIP MECÁNICA</p>
-<p class="text-sm" data-es="Taller Mecánico en Bariloche" data-en="Mechanical Workshop in Bariloche">Taller Mecánico en Bariloche</p>
+<p class="mb-2 text-white font-display font-bold text-xl md:text-2xl glow-text tracking-tight">SIP MECANICA</p>
+<p class="text-sm">Taller Mecánico en Bariloche</p>
 </div>
 <!-- Footer minimalista con botón de reseñas-->
 <div class="flex items-center gap-4">
 <!-- Botón de reseñas-->
-<a href="https://maps.app.goo.gl/yCk8TtisiHZfzj5V6" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-primary-green hover:text-yellow-400 transition text-sm font-semibold group">
+<a href="https://maps.app.goo.gl/yCk8TtisiHZfzj5V6" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-primary-orange hover:text-yellow-400 transition text-sm font-semibold group">
 <i class="fa-solid fa-star group-hover:scale-110 transition-transform"></i>
-<span data-es="Deja tu Reseña" data-en="Leave Review">Deja tu Reseña</span>
+<span>Deja tu Reseña</span>
 </a>
 </div>
 </div>
 <!-- Firma del diseñador NEXO-Art -->
 <div class="border-t border-white/10 mt-6 pt-4 text-center">
 <a href="https://nexoar-art.github.io/NEXO-art/" target="_blank" rel="noopener noreferrer"
-class="inline-flex items-center gap-1.5 text-xs text-gray-600 hover:text-primary-green transition font-medium group">
+class="inline-flex items-center gap-1.5 text-xs text-gray-600 hover:text-primary-orange transition font-medium group">
 <i class="fa-solid fa-pen-nib group-hover:scale-110 transition-transform"></i>
 Diseño: NEXO-Art
 </a>
-<p class="text-gray-600 mt-2 text-xs" data-es="Sitio web desarrollado con tecnología moderna" data-en="Website developed with modern technology">Sitio web desarrollado con tecnología moderna</p>
+<p class="text-gray-600 mt-2 text-xs">Sitio web desarrollado con tecnología moderna</p>
 </div>
 </div>
 </footer>
 <!-- STICKY MOBILE CTA-->
 <div class="fixed bottom-0 left-0 w-full bg-gray-900/95 backdrop-blur-sm border-t border-white/10 p-4 md:hidden z-50 flex gap-3">
-<a href="#asesoramiento" class="flex-1 bg-white/5 text-white font-semibold py-3.5 rounded-xl text-center border border-white/10 hover:border-primary-green/40 transition text-sm flex items-center justify-center gap-2">
-<i class="fa-solid fa-book-open text-primary-green"></i><span data-es="Servicios" data-en="Services">Servicios</span>
+<a href="#asesoramiento" class="flex-1 bg-white/5 text-white font-semibold py-3.5 rounded-xl text-center border border-white/10 hover:border-primary-orange/40 transition text-sm flex items-center justify-center gap-2">
+<i class="fa-solid fa-book-open text-primary-orange"></i><span>Guías</span>
 </a>
 <a href="#diagnostico" class="flex-[2] btn-primary font-bold py-3.5 rounded-xl text-center uppercase shadow-neon text-sm flex items-center justify-center gap-2">
-<i class="fa-solid fa-calendar-check"></i> <span data-es="Pedir Turno" data-en="Book Appointment">Pedir Turno</span>
+<i class="fa-solid fa-microchip"></i> <span>Diagnóstico</span>
 </a>
 </div>
 <!-- JAVASCRIPT FUNCIONAL -->
 <script>
 document.addEventListener('DOMContentLoaded',()=>{
-// Language Switcher
-let currentLang='es';
-const langToggle= document.getElementById('langToggle');
-const langText= document.getElementById('langText');
-function translatePage(lang){
-currentLang= lang;
-const elements= document.querySelectorAll('[data-es][data-en]');
-elements.forEach(el=>{
-const text= el.getAttribute(`data-${lang}`);
-if(text){
-if(el.tagName=== 'INPUT' && el.hasAttribute('placeholder')){
-el.placeholder= text;
-} else if(el.tagName=== 'OPTION'){
-el.textContent= text;
-} else{
-el.innerHTML= text;
-}
-}
-});
-langText.textContent= lang=== 'es' ? 'EN' : 'ES';
-}
-langToggle?.addEventListener('click',()=>{
-const newLang= currentLang=== 'es' ? 'en' : 'es';
-translatePage(newLang);
-});
-
 // Generar partículas decorativas
 function createParticles(){
 const container= document.getElementById('particles');
@@ -1247,23 +1205,28 @@ const barMobile= document.getElementById('status-bar-mobile');
 
 if(isOpen){
 // Estado ABIERTO
-dotDesktop.className='status-dot w-2 h-2 rounded-full mr-2.5 bg-primary-green';
-textDesktop.textContent= currentLang=== 'es' ? 'Abierto Ahora' : 'Open Now';
-textDesktop.className='text-primary-green font-semibold';
-barMobile.textContent= currentLang=== 'es' ? '🟢 Abierto Ahora - Atención Inmediata' : '🟢 Open Now - Immediate Service';
-barMobile.className='md:hidden w-full py-2 text-center text-xs font-bold uppercase tracking-wide text-white bg-gradient-to-r from-primary-green/20 to-green-700/20';
+dotDesktop.className='status-dot w-2 h-2 rounded-full mr-2.5 bg-primary-orange';
+textDesktop.textContent='Abierto Ahora';
+textDesktop.className='text-primary-orange font-semibold';
+barMobile.textContent='🟢 Abierto Ahora - Atención Inmediata';
+barMobile.className='md:hidden w-full py-2 text-center text-xs font-bold uppercase tracking-wide text-white bg-gradient-to-r from-primary-orange/20 to-orange-700/20';
 } else{
 // Estado CERRADO
 dotDesktop.className='w-2 h-2 rounded-full mr-2.5 bg-gray-500';
-textDesktop.textContent= currentLang=== 'es' ? 'Cerrado' : 'Closed';
+textDesktop.textContent='Cerrado';
 textDesktop.className='text-gray-400';
 
 // Mostrar próximo horario de apertura (actualizado para nuevos horarios)
 let nextOpen='';
-if(currentLang=== 'es'){
 if(day===0){ // Domingo: abre Lunes 08:00
 nextOpen='Abre Lunes 08:00';
-} else{ // Lunes a Sábado
+} else if(day===6){ // Sábado
+if(currentMinutes>=closeTime){
+nextOpen='Abre Lunes 08:00';
+} else{
+nextOpen='Cierra 17:00';
+}
+} else{ // Lunes a Viernes
 if(currentMinutes>=closeTime){
 nextOpen='Abre mañana 08:00';
 } else if(currentMinutes<openTime){
@@ -1273,20 +1236,6 @@ nextOpen='Cierra 17:00';
 }
 }
 barMobile.textContent=`🔴 Cerrado - ${nextOpen}`;
-} else{
-if(day===0){ // Sunday: opens Monday 08:00
-nextOpen='Opens Mon 08:00';
-} else{ // Monday to Saturday
-if(currentMinutes>=closeTime){
-nextOpen='Opens tomorrow 08:00';
-} else if(currentMinutes<openTime){
-nextOpen='Opens today 08:00';
-} else{
-nextOpen='Closes 17:00';
-}
-}
-barMobile.textContent=`🔴 Closed - ${nextOpen}`;
-}
 barMobile.className='md:hidden w-full py-2 text-center text-xs font-bold uppercase tracking-wide text-gray-300 bg-gray-900/80';
 }
 }
@@ -1319,9 +1268,9 @@ function startCounters() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 // Duraciones diferenciadas: 1.5s, 1.8s, 2s para efecto escalonado
-                animateCounter('counter1', 0, 99, 1500);   // Satisfacción
-                animateCounter('counter2', 0, 15, 1800);   // Años Exp.
-                animateCounter('counter3', 0, 5000, 2000); // Clientes
+                animateCounter('counter1', 0, 99, 1500);   // Precisión
+                animateCounter('counter2', 0, 50, 1800);   // Ahorro
+                animateCounter('counter3', 0, 8000, 2000); // Vehículos
                 observer.disconnect();
             }
         });
@@ -1349,7 +1298,7 @@ document.getElementById('triageForm')?.addEventListener('submit',(e)=>{
 e.preventDefault();
 const btn= e.target.querySelector('button[type="submit"]');
 const originalBtnContent= btn.innerHTML;
-btn.innerHTML='<i class="fa-solid fa-spinner fa-spin"></i> '+(currentLang=== 'es' ? 'Procesando solicitud...' : 'Processing request...');
+btn.innerHTML='<i class="fa-solid fa-spinner fa-spin"></i> Procesando solicitud...';
 btn.classList.add('opacity-80','cursor-not-allowed');
 btn.disabled= true;
 const vehicleType= document.getElementById('inputVehicleType').value||'No especificado';
@@ -1363,8 +1312,8 @@ const serviceSelect= document.getElementById('inputService');
 const service= serviceSelect.options[serviceSelect.selectedIndex]?.text||'No especificado';
 const name= document.getElementById('inputName').value||'Cliente';
 const phone= document.getElementById('inputPhone').value||'No proporcionado';
-// ✅ Mensaje para WhatsApp actualizado para SIP MECÁNICA BARILOCHE
-const message=`🚗 *¡Hola SIP MECÁNICA!* 👋
+// ✅ Mensaje para WhatsApp actualizado
+const message=`🚗 *¡Hola SIP MECANICA!* 👋
 *Cliente:* ${name}
 📱 *Contacto:* ${phone}
 🚘 *Tipo de Vehículo:* ${vehicleType}
@@ -1375,13 +1324,13 @@ const message=`🚗 *¡Hola SIP MECÁNICA!* 👋
 ${symptoms}
 🔍 *Contexto:* ${context}
 🔧 *Servicio solicitado:* ${service}
-📍 *Ubicación: San Carlos de Bariloche, Río Negro*
-📅 *Solicito turno para reparación/mantenimiento.* 💨`;
+📍 *Ubicación: Bariloche, Río Negro*
+📅 *Solicito turno para diagnóstico profesional.* 💨`;
 // URL de WhatsApp con el número formateado para Argentina
 const whatsappUrl=`https://api.whatsapp.com/send?phone=+54294154631057&text=${encodeURIComponent(message)}`;
 setTimeout(()=>{
 window.open(whatsappUrl,'_blank','noopener,noreferrer');
-btn.innerHTML='<i class="fa-solid fa-circle-check"></i> '+(currentLang=== 'es' ? '¡Solicitud Enviada! ✅' : 'Request Sent! ✅');
+btn.innerHTML='<i class="fa-solid fa-circle-check"></i> ¡Solicitud Enviada! ✅';
 btn.classList.add('bg-green-600');
 setTimeout(()=>{
 btn.innerHTML= originalBtnContent;
