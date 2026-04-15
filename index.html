@@ -228,7 +228,7 @@ color: rgba(226, 232, 240, 0.5);
 }
 .input-valid{
 border-color:#FF6B35!important;
-background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23FF6B35'%3e%3cpath fill-rule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clip-rule='evenodd'/%3e%3c/svg%3e");
+background-image: url("image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23FF6B35'%3e%3cpath fill-rule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clip-rule='evenodd'/%3e%3c/svg%3e");
 background-repeat: no-repeat;
 background-position: right 1rem center;
 background-size: 1.3em;
@@ -1079,8 +1079,9 @@ Completa el formulario y nuestros técnicos prepararán el análisis previo ante
 <i class="fa-regular fa-clock text-primary-orange text-xl mt-0.5 flex-shrink-0"></i>
 <div>
 <p class="font-medium">Horarios de atención:</p>
-<p>Lunes a Sábado: 08:00 - 17:00</p>
-<p>Domingo: Cerrado</p>
+<p>Lunes a Viernes: 08:00 - 16:30</p>
+<p>Sábados y Domingos: Cerrado</p>
+<p>Feriados: Consultar por WhatsApp</p>
 </div>
 </div>
 </div>
@@ -1175,17 +1176,17 @@ const day= now.getDay(); // 0= Domingo, 1= Lunes,..., 6= Sábado
 
 const currentMinutes= hours*60+ minutes;
 
-// ✅ NUEVOS HORARIOS: Lunes a Sábado 08:00 - 17:00
+// ✅ NUEVOS HORARIOS: Lunes a Viernes 08:00 - 16:30
 const openTime=8*60;     // 480 minutos (08:00)
-const closeTime=17*60;   // 1020 minutos (17:00)
+const closeTime=16*60+30;   // 990 minutos (16:30)
 
 let isOpen= false;
 
-// ✅ Lunes a Sábado (1-6): 08:00 a 17:00
-if(day>=1 && day<=6){
+// ✅ Lunes a Viernes (1-5): 08:00 a 16:30
+if(day>=1 && day<=5){
 isOpen= currentMinutes>=openTime && currentMinutes<closeTime;
 }
-// ✅ Domingo (0): Cerrado
+// ✅ Sábado (6) y Domingo (0): Cerrado
 else{
 isOpen= false;
 }
@@ -1213,19 +1214,21 @@ textDesktop.className='text-gray-400';
 let nextOpen='';
 if(day===0){ // Domingo: abre Lunes 08:00
 nextOpen='Abre Lunes 08:00';
-} else if(day===6){ // Sábado
+} else if(day===6){ // Sábado: cerrado, abre Lunes
+nextOpen='Abre Lunes 08:00';
+} else if(day===5){ // Viernes
 if(currentMinutes>=closeTime){
 nextOpen='Abre Lunes 08:00';
 } else{
-nextOpen='Cierra 17:00';
+nextOpen='Cierra 16:30';
 }
-} else{ // Lunes a Viernes
+} else{ // Lunes a Jueves (1-4)
 if(currentMinutes>=closeTime){
 nextOpen='Abre mañana 08:00';
 } else if(currentMinutes<openTime){
 nextOpen='Abre hoy 08:00';
 } else{
-nextOpen='Cierra 17:00';
+nextOpen='Cierra 16:30';
 }
 }
 barMobile.textContent=`🔴 Cerrado - ${nextOpen}`;
